@@ -1,0 +1,7 @@
+{
+  "name": "ATT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
