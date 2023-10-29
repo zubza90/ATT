@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fondo">
+    <ion-card class="custom-card">
+      <ion-card-header>
+        <ion-card-title>Iniciar Sesión</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="text-container">
+          <ion-label position="floating" class="datos">Correo Electrónico</ion-label>
+          <ion-input type="email" [(ngModel)]="email" class="input-has-focus"></ion-input>
+        </div>
+        <div class="text-container">
+          <ion-label position="floating" class="datos">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="password" class="input-has-focus"></ion-input>
+        </div>
+        <ion-button expand="full" routerLink="/perfil">Iniciar Sesión</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+

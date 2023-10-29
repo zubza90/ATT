@@ -1,0 +1,39 @@
+
+  .text-container {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+  .text-container {
+    text-align: left;
+    color: white;
+  }
+ 
+  
+  
+ 
+  .fondo {
+    background-color: #170232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura de fondo a la pantalla completa */
+  }
+  
+  .custom-card {
+    width: 70%;
+    border-radius: 10px;
+    background-color: #6114a0;
+  }
+  
+  .text-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: white;
+  }
+  
+  ion-toolbar {
+    --background: #6114a0;
+    color: white;
+  }
+  
