@@ -58,7 +58,13 @@
 <ion-content color="primary">
   <h1> Bienvenido </h1>
   <h6>Mis Tareas</h6>
-  <ion-button (click)="GoToTareas()" color="tertiary" expand="block">Ir a mis Tareas</ion-button> 
+
+
+
+  <ion-datetime [isDateEnabled]="isWeekday"></ion-datetime>
+  <ion-button color="tertiary" expand="block">Guardar y Salir</ion-button>
+  <ion-button color="tertiary" expand="block">Salir sin Guardar</ion-button>
+   
 </ion-content>
   
     

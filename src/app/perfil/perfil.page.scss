@@ -1,0 +1,58 @@
+.purple-section {
+    background-color: #650090; 
+    height: 50vh; 
+    padding: 20px;
+    text-align:center;
+  }
+  
+  .black-section {
+    background-color: #170232; 
+    height: 50vh; 
+    padding: 20px;
+    color: #fff; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+  ion-toolbar {
+    --background: #a703a7;
+    color: white; 
+  }
+  ion-title{ 
+    margin-left: auto;
+    text-align: right;
+  }
+  ion-icon[name="people-circle-outline"] {
+    font-size: 150px !important; 
+    margin: 20px auto 0;
+    display: block;
+  }
+  
+  ion-title[name="nombre_usuario"] {
+    text-align: center;
+    margin-top: 10px; 
+  }
+  ion-label[name="email"] {
+    text-align: center;
+    
+  }  
+
+  /* buttoms*/
+  
+  
+  
+  .round-button {
+    --border-radius: 100px; /* Establece el radio del botón para hacerlo redondo */
+    --background: #d611da; /* Cambia el color de fondo según tus preferencias */
+    color: #f7f7f7; /* Cambia el color del texto según tus preferencias */
+    text-align: center;
+    padding: 10px; /* Ajusta el espacio interno según tus preferencias */
+    width: 70%;
+  }
+
+  
+  .icon-button{
+    font-size: 40px !important; 
+  }
+  
+  

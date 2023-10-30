@@ -8,6 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
+ Jordan
     redirectTo: 'landing',
     pathMatch: 'full'
   },
@@ -26,9 +27,18 @@ const routes: Routes = [
   {
     path: 'reset-password',
     loadChildren: () => import('./pages/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
+
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+ main
   },
 
 ];
+
 
 @NgModule({
   imports: [
@@ -37,3 +47,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+function navigateToLogin(): import("@angular/router").Route {
+  throw new Error('Function not implemented.');
+}
+
