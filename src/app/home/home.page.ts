@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  user : any
+  constructor(private router: Router, public authService:AuthenticationService) {
+    this.user = authService.getProfile();
+  }
+  
+  GoToTareas(){
+    this.router.navigate(['/tareas'])
+  }
 
-  constructor() {}
-
+  async logOut(){
+    this.authService.signOut().then(()=>{
+      this.router.navigate(['/landing'])
+    }).catch((error)=>{
+      console.log(error);
+    })
+  }
 }
